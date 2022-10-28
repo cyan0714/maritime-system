@@ -1,11 +1,12 @@
 <script setup>
+import { useRoute } from "vue-router";
+
+const router = useRoute()
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <div class="app">
+    <router-view></router-view>
   </div>
 </template>
 
